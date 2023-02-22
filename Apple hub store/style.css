@@ -1,0 +1,686 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 2s linear;
+}
+/* start of header section*/
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color:#F3EFEF;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .bar{
+    padding-left: 2%;
+}
+header .logo{
+    background-image: url(img/LogoMakr-2UN7MI.png);
+    height: 125px;
+    width: 100px;
+    background-position: center;
+    background-size: cover;
+    margin-left: -15%
+}
+
+
+header .nav{
+    background-color:#F3EFEF;
+text-align: center;
+margin-left: 5%;
+margin-top: 5%;
+    /*position: relative;
+cursor: pointer;
+top: 20%;
+left: 90%;
+transform: translate(-40%,-150%);*/
+}
+header .nav ul{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  /*  padding-left: 30px;
+    padding-top: -25%;*/
+}
+header .nav ul li{
+    display: inline-block;
+    position: relative;
+
+}
+header .nav ul li a{
+    display: block;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    text-indent: 50px;
+    font-weight: bold; 
+    font-size: 18px;
+    color: black;
+    text-indent: 10px;
+}
+header .nav ul li ul.drop li{
+    display: block;
+  
+}
+header .nav ul li ul.drop{
+    background-color: rgb(239, 245, 243);
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+header .nav ul li a:hover{
+    color: rgb(241, 34, 51);
+    transition: .4s;
+}
+header ul li:hover ul.drop{
+    display: block;
+    justify-content: left;
+    background-color: transparent;
+}
+header .iconss{
+margin-top: -1%;
+margin-left: -28%;
+margin-right: 2%;
+}
+
+
+
+header #toggler{
+    display: none;
+}
+header #bars{
+    cursor: pointer;
+    font-size: 2px;
+    color: #333;
+    border-radius: 1px;
+    border:1px solid rgb(37, 37, 37);
+    padding: 5px 5px;
+    margin-left: 5px;
+    display: none;
+}
+
+/* end of header section */
+/*home section start */
+section {
+    padding-top: 8%;
+   
+}
+section .home1{
+    display: flex;
+    align-items: center;
+    min-height: 85vh;
+    min-width:90px ;
+}
+.home{
+    height:85vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.content{
+    position: absolute;
+    top:60%;
+    left:75%;
+    transform: translate(-50%,-50%);
+}
+.content h1{
+    color: white;
+   font-size: 34px;
+   margin:15px 0px 10px; 
+}
+.content p{
+    color:white;
+    font-size: 20px;
+    margin-bottom:25px;
+
+}
+.rectangle{
+position: absolute;
+width: 570px;
+height: 655px;
+left: 766px;
+top: 99px;
+background: rgba(2, 135, 202, 0.58);
+opacity: 0.3
+}
+.submit{
+    flex: 1;
+      display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.submit a{
+    text-decoration: none;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: black;
+    color:white;
+    font-size: 23px;
+    transition: 2s all ease-in-out;
+    
+}
+.submit a:hover{
+    background-color: transparent;
+    color: rgb(241, 236, 236);
+    border: 2px solid rgb(29, 29, 29);
+}
+/* home section end*/
+/* trending now section start */
+.trending{
+    height: 90vh;
+    width: 100%;
+    margin-top: -4%;
+    background: linear-gradient(334.26deg, #9C9EB0 32%, rgba(186, 188, 201, 0.492375) 43.39%, rgba(216, 217, 224, 0) 54.44%)
+
+}
+.leftarrow{
+position: relative;
+cursor: pointer;
+top: 40%;
+left: 20%;
+transform: translate(-40%,-150%);
+}
+.trending h1{
+    padding: 5px;
+    margin-top: 5%;
+ 
+    text-align: center;
+}
+ .row{
+    margin-top: 40px;
+    margin-left: 180px;
+    position: relative;
+    display: flex; 
+}
+.intercolumn img{
+    height: 280px;
+    width: 225px;
+}
+.column{
+    margin-left: 40px;
+    margin-right: 70px;
+}
+.trending .submit{
+    margin-left: -0px;
+    align-items: center;
+    margin-top: 20px;
+}
+.trending .submit a:hover{
+    background-color: transparent;
+    color: rgb(109, 93, 252);
+    border: 2px solid rgb(135, 101, 255);
+}
+.row h3{
+    align-items: center;
+    text-align: center;
+    margin-left: 45px;
+}
+.row h5{
+    align-items: center;
+    margin-left: 50px;
+}
+.icon5 i{
+    
+    margin-left:-50px;
+padding-top: 92px;
+}
+.icon6 i{
+    
+ margin-left: -20px;
+padding-top: 99px;
+}
+/* trending now section end */
+/* why apple hub section start */
+section .container1{
+    padding-top: 0%;
+}
+.container{
+    margin-top: -9%;
+    background-color: black;
+       height: 78vh;
+}
+.services
+{
+    text-align: center;
+}
+.services h3{
+    color: white;
+    padding-top: 24px;
+}
+.services p{
+    color: white;
+    margin-top: 6px;
+}
+.container h5{
+    padding-top: 4px;
+color: white;
+
+}
+.container p{
+    padding-top: 4px;
+    color: white;
+    font-size: 16px;
+    
+}
+.icons{
+    font-size: 50px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    margin-left: 30px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 50%;
+}
+.container .row1{
+    margin-top: 40px;
+    margin-left: 65px;
+    position: relative;
+    display: flex;
+}
+.container .column1{
+margin-left: 40px;
+margin-right: 40px;
+}
+.column1 p{
+padding-top: 19px;
+}
+/* end of why apple hub nepal*/
+/* start of hot new product */
+.hotnewproduct{
+    height: 95vh;
+    width: 100%;
+    background-color: #C6C6CC;
+    margin-top: -9%;
+}
+section .hotnewproduct1{
+    padding-top: 0%;
+   
+}
+.hotnewproduct h2{
+    padding: 50px;
+    text-align: center;
+}
+.hotnewproduct p{
+    padding: -60px;
+    margin-top: -3%;
+    text-align: center;
+}
+.row2{
+    margin-top: 40px;
+    margin-left: 165px;
+    position: relative;
+    display: flex; 
+}
+.intercolumn2 img{
+    height: 280px;
+    width: 250px;
+    margin-left: 34px;
+    margin-top: 7px;
+}
+.column2{
+    margin-left: 120px;
+    margin-right: 40px;
+    background-color: rgb(246, 246, 250);
+    border-radius: 3px;
+    height: 66vh;
+    width: 25%;
+}
+.hotnewproduct .submit{
+    margin-left: -15px;
+    align-items: center;
+    margin-top: 15px;
+}
+.hotnewproduct .submit a:hover{
+    background-color: transparent;
+    color: rgb(109, 93, 252);
+    border: 2px solid rgb(135, 101, 255);
+}
+.row2 h3{
+    align-items: center;
+    margin-left: 86px;
+}
+.row2 h5{
+    align-items: center;
+    margin-left: 95px;
+}
+/* end of hot new product */
+/* start of customer review */
+.container-review{
+    height: 90vh;
+    width: 100%;
+    margin-top: -9%;
+    background-color: #87878D;
+}
+
+.container-review h3{
+  
+padding-top: 4%;
+    text-align: center;
+}
+.container-review p{
+    margin-top: 1%;
+    text-align: center;
+}
+.row3{
+    margin-top: 40px;
+    margin-left: 150px;
+    position: relative;
+    display: flex; 
+}
+
+.images img{
+    height: 190px;
+    width: 170px;
+   margin-left: 25px;
+   margin-top: 11px;
+}
+.container-review .column3{
+    margin-left: 15px;
+    margin-right: 30px;
+    border-radius: 1px;
+    border-color: white;
+    background-color: white;
+    height: 33vh;
+    width: 18%;
+}
+.row4{
+    margin-top: 2px;
+    margin-left: 150px;
+    position: relative;
+    display: flex; 
+    padding-top: -195%;
+}
+.container-review .column4{
+    margin-left: 15px;
+    margin-right: 30px;
+    border-radius: 1px;
+    border-color: white;
+    background-color: white;
+    height: 21vh;
+    width: 18%;
+    
+}
+.column4 p{
+    text-align: left;
+}
+.icon7 i{
+    
+    margin-left:-65px;
+padding-top: 102px;
+}
+.icon8 i{
+    
+ margin-left:18px;
+padding-top:125px ;
+}
+/*end of customer review */
+/* start of repair alignment */
+.container-repair{
+    height: 142vh;
+    width: 100%;
+    margin-top: -9%;
+    background-color: #C8C8CB;
+}
+
+.container-repair h3{ 
+padding-top: 4%;
+    text-align: center;
+}
+.container-repair p{
+  
+    margin-top: 1%;
+    text-align: center;
+}
+.row5{
+    margin-top: 40px;
+    margin-left: 250px;
+    position: relative;
+    display: flex; 
+    text-align: justify;
+    column-gap: 40px;
+}
+.container-repair .column5{
+    margin-left: 15px;
+    margin-right: 30px;
+    border-radius: 2px solid black;
+    height: 40vh;
+    width: 20%;
+}
+.imaged img{
+   margin-left: 20px;
+   margin-top: 19px;
+
+
+}
+.column6 .imaged i{
+  margin-left: 45px;
+  margin-top: 30px;
+  color: #000000;
+  border: 3px;
+}
+.boarder{
+    height: 130px;
+    width:140px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-left: 26px;
+}
+.row5 .column5 p{
+    padding-top: 3%;
+    text-align: center;
+}
+.column5 h4{
+    padding-top:7% ;
+    text-align: center;
+}
+.row6{
+    margin-top: 40px;
+    margin-left: 250px;
+    position: relative;
+    display: flex; 
+    text-align: justify;
+    column-gap: 60px;
+}
+.container-repair .column6{
+    margin-left: 15px;
+    margin-right: 30px;
+    border-radius: 2px solid black;
+    height: 40vh;
+    width: 18%;
+}
+.row6 .column6 p{
+    padding-top: 3%;
+    text-align: center;
+}
+.column6 .imaged1 i{
+    margin-top: 38px;
+    color: #100f0f;
+    margin-left: 45px;
+}.column5 .imaged2 i{
+    margin-top: 40px;
+    margin-left: 38px;
+
+}.column5 .imaged3 i{
+    margin-top: 38px;
+    margin-left: 42px;
+}
+
+.column6 h4{
+    padding-top:7% ;
+    text-align: center;
+}
+.container-repair .submit{
+    margin-left: -54%;
+    margin-top: 25%;
+}
+.container-repair .submit a{
+    color: black;
+    background-color: white;
+}
+.column6 .boarder1{
+    display: none;
+}
+.column6 h6{
+    display: none;
+}
+/* end of repair section */
+/* start of footer section */
+.footer1{
+
+    height: 30vh;
+    width: 100%;
+    margin-top: -9%;
+    background-color: rgb(7, 7, 7);
+}
+.footer{
+    padding-top: -12%;
+    margin-top: -20px;
+    background-color:rgb(7, 7, 7);
+    box-sizing: border-box;
+    margin-left: 7%;
+}
+.footer .fo-column h3{
+    color:white;
+    font-size: 23px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    position: relative;
+}
+.footer .fo-row{
+display: flex;
+flex-wrap: wrap;
+column-gap: -42%;
+
+}
+.fo-row .fo-column {
+    margin-left: 32px;
+    margin-right: 10px;
+    border-radius: 2px solid rgb(252, 242, 242);
+    height: 26vh;
+    width: 15%;
+}
+.fo-column ul{
+    list-style: none;
+
+}
+.fo-column ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.fo-column ul li a{
+    font-family: 'poppins', sans-serif;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+.fo-column ul li a:hover{
+    color:#ffffff;
+    padding-left: 10px;
+}
+.fo-column .social-links a{
+display: inline-block;
+height: 40px;
+width: 40px;
+background-color: #87878D;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: rgb(8, 8, 8);
+transition: all 0.3s ease;
+}
+.fo-column .social-links a:hover{
+    color: black;
+    background-color: white;
+}
+span .right-diagonal{
+margin-left: 3%;
+}
+.right-diagonal{
+    height: 27vh;
+    color: wheat;
+    display: inline-block;
+    margin-right: 44px;
+    border-right: 1px solid #fff;
+    margin-left: 14px;
+    transform: rotate(-20deg);
+
+}
+span .right-diagonal1{
+    margin-left: 3%;
+}
+.right-diagonal1{
+        height: 27vh;
+        color: wheat;
+        display: inline-block;
+        margin-right: 10px;
+        border-right: 1px solid #fff;
+        margin-left: -39px;
+        transform: rotate(-20deg);
+}
+span .line{
+        height: 7px;
+        width: 100%;
+        color: white;
+        display: inline-block;
+        background-color: red;
+        
+    }
+    #horizontal-line{
+        height: 1px;
+        width: 1400px;
+        background-color: white;
+        color: white;
+        margin-left: -12%;
+    }
+    .fo-row1{
+        margin-top: 3px;
+        height: 40px;
+        width: 100%;
+        display: flex;
+        column-gap: 20px;
+    }
+    .fo-column1{
+        height: 50px;
+        width: 15%;
+    }
+  .fo-column1  a{
+        font-family: 'poppins', sans-serif;
+        text-transform: capitalize;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+    .fo-column1  a:hover{
+        color:#ffffff;
+        padding-left: 10px;
+    }
+    .fo-column3{
+        height: 50px;
+        width: 25%;
+    }
+  .fo-column3  a{
+        font-family: 'poppins', sans-serif;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+    .fo-column3  a:hover{
+        color:#ffffff;
+        padding-left: 10px;
+    }
+/* end of footer section */
